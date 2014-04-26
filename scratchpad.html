@@ -33,11 +33,11 @@ function toggle_visibility(id) {
 }
 //-->
 </script>
-
-<textarea style="display:none;" autofocus>
+<a href="#" onclick="toggle_visibility('text');">Show markdown</a>
+<textarea style="width:700px;height:300px;display:none;" autofocus id='text'>
 Purpose
 ============
-Generate HTML from markdown dymamically using javscript. One can write document in markdown in the text area
+Generate HTML from markdown dynamically using javascript. One can write document in markdown in the text area
 and it will be shown in HTML in browser. To edit the content, use markdown-mode in emacs or use your
 favorite editor.
 
@@ -68,16 +68,15 @@ Todos
 <h1>Other</h1>
 Type  other code and texts that should be normally hidden in this area.
 
-<a href="#" onclick="toggle_visibility('foo');">More detail</a>
+<a href="#" onclick="toggle_visibility('foo');">Show other text</a>
 <div id="foo" style="display:none">
 <pre >
 class Voila {
 public:
   // Voila
    static const string VOILA = "Voila";
-	
+
   // will not interfere with embedded tags.
 }
 </pre>
 </div>
-
